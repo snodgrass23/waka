@@ -1,0 +1,19 @@
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/erb-5.1.1/ext/erb/escape
+/Users/jim/.rbenv/versions/3.3.0/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/erb-5.1.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-p61isj sitelibdir\=./.gem.20251014-53563-p61isj clean
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/erb-5.1.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-p61isj sitelibdir\=./.gem.20251014-53563-p61isj
+compiling escape.c
+linking shared-object erb/escape.bundle
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/erb-5.1.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-p61isj sitelibdir\=./.gem.20251014-53563-p61isj install
+/opt/homebrew/bin/ginstall -c -m 0755 escape.bundle ./.gem.20251014-53563-p61isj/erb
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/erb-5.1.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-p61isj sitelibdir\=./.gem.20251014-53563-p61isj clean

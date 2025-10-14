@@ -1,0 +1,75 @@
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/puma-4.3.12/ext/puma_http11
+/Users/jim/.rbenv/versions/3.3.0/bin/ruby extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+checking for DTLS_method() in openssl/ssl.h... yes
+checking for TLS_server_method() in openssl/ssl.h... yes
+checking for SSL_CTX_set_min_proto_version in openssl/ssl.h... yes
+checking for Random.bytes... yes
+creating Makefile
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/puma-4.3.12/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-moamj1 sitelibdir\=./.gem.20251014-53563-moamj1 clean
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/puma-4.3.12/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-moamj1 sitelibdir\=./.gem.20251014-53563-moamj1
+compiling http11_parser.c
+ext/puma_http11/http11_parser.c:44:18: warning: unused variable 'puma_parser_en_main' [-Wunused-const-variable]
+   44 | static const int puma_parser_en_main = 1;
+      |                  ^~~~~~~~~~~~~~~~~~~
+1 warning generated.
+compiling io_buffer.c
+compiling mini_ssl.c
+mini_ssl.c:111:8: warning: 'DH_new' is deprecated [-Wdeprecated-declarations]
+  111 |   dh = DH_new();
+      |        ^
+/opt/homebrew/opt/openssl@3/include/openssl/dh.h:210:1: note: 'DH_new' has been explicitly marked deprecated here
+  210 | OSSL_DEPRECATEDIN_3_0 DH *DH_new(void);
+      | ^
+/opt/homebrew/opt/openssl@3/include/openssl/macros.h:217:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+  217 | #   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+      |                                                 ^
+/opt/homebrew/opt/openssl@3/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+   62 | #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+      |                                                    ^
+mini_ssl.c:125:34: warning: 'DH_set0_pqg' is deprecated [-Wdeprecated-declarations]
+  125 |   if (p == NULL || g == NULL || !DH_set0_pqg(dh, p, NULL, g)) {
+      |                                  ^
+/opt/homebrew/opt/openssl@3/include/openssl/dh.h:266:1: note: 'DH_set0_pqg' has been explicitly marked deprecated here
+  266 | OSSL_DEPRECATEDIN_3_0 int DH_set0_pqg(DH *dh, BIGNUM *p, BIGNUM *q, BIGNUM *g);
+      | ^
+/opt/homebrew/opt/openssl@3/include/openssl/macros.h:217:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+  217 | #   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+      |                                                 ^
+/opt/homebrew/opt/openssl@3/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+   62 | #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+      |                                                    ^
+mini_ssl.c:126:5: warning: 'DH_free' is deprecated [-Wdeprecated-declarations]
+  126 |     DH_free(dh);
+      |     ^
+/opt/homebrew/opt/openssl@3/include/openssl/dh.h:211:1: note: 'DH_free' has been explicitly marked deprecated here
+  211 | OSSL_DEPRECATEDIN_3_0 void DH_free(DH *dh);
+      | ^
+/opt/homebrew/opt/openssl@3/include/openssl/macros.h:217:49: note: expanded from macro 'OSSL_DEPRECATEDIN_3_0'
+  217 | #   define OSSL_DEPRECATEDIN_3_0                OSSL_DEPRECATED(3.0)
+      |                                                 ^
+/opt/homebrew/opt/openssl@3/include/openssl/macros.h:62:52: note: expanded from macro 'OSSL_DEPRECATED'
+   62 | #     define OSSL_DEPRECATED(since) __attribute__((deprecated))
+      |                                                    ^
+mini_ssl.c:166:7: warning: unused variable 'min' [-Wunused-variable]
+  166 |   int min, ssl_options;
+      |       ^~~
+mini_ssl.c:334:40: warning: function 'raise_error' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+  334 | void raise_error(SSL* ssl, int result) {
+      |                                        ^
+5 warnings generated.
+compiling puma_http11.c
+linking shared-object puma/puma_http11.bundle
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/puma-4.3.12/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-moamj1 sitelibdir\=./.gem.20251014-53563-moamj1 install
+/opt/homebrew/bin/ginstall -c -m 0755 puma_http11.bundle ./.gem.20251014-53563-moamj1/puma
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/puma-4.3.12/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-moamj1 sitelibdir\=./.gem.20251014-53563-moamj1 clean

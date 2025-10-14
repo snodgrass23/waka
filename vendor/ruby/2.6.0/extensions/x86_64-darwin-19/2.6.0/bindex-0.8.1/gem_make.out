@@ -1,0 +1,47 @@
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/jim/.rbenv/versions/2.6.3/bin/ruby -I /Users/jim/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20251014-47344-bjzn6n.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+cruby.c:74:17: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+   74 |   id_bindings = rb_intern("bindings");
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/jim/.rbenv/versions/2.6.3/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+ 1826 |         __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+      |                       ^
+cruby.c:74:17: note: '{' token is here
+   74 |   id_bindings = rb_intern("bindings");
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/jim/.rbenv/versions/2.6.3/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+ 1826 |         __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/jim/.rbenv/versions/2.6.3/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+ 1811 |     {                                                   \
+      |     ^
+cruby.c:74:17: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+   74 |   id_bindings = rb_intern("bindings");
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/jim/.rbenv/versions/2.6.3/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+ 1826 |         __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/jim/.rbenv/versions/2.6.3/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+ 1816 |     }
+      |     ^
+cruby.c:74:17: note: ')' token is here
+   74 |   id_bindings = rb_intern("bindings");
+      |                 ^~~~~~~~~~~~~~~~~~~~~
+/Users/jim/.rbenv/versions/2.6.3/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+ 1826 |         __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+      |                                                        ^
+2 warnings generated.
+linking shared-object skiptrace/internal/cruby.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20251014-47344-1tkm5qf/skiptrace/internal

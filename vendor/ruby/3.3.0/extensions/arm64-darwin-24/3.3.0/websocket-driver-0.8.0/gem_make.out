@@ -1,0 +1,18 @@
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+/Users/jim/.rbenv/versions/3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-p1eb5z sitelibdir\=./.gem.20251014-53563-p1eb5z clean
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-p1eb5z sitelibdir\=./.gem.20251014-53563-p1eb5z
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-p1eb5z sitelibdir\=./.gem.20251014-53563-p1eb5z install
+/opt/homebrew/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20251014-53563-p1eb5z
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-p1eb5z sitelibdir\=./.gem.20251014-53563-p1eb5z clean

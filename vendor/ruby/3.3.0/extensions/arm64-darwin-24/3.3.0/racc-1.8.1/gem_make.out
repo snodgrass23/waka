@@ -1,0 +1,18 @@
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/jim/.rbenv/versions/3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-a9wfgh sitelibdir\=./.gem.20251014-53563-a9wfgh clean
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-a9wfgh sitelibdir\=./.gem.20251014-53563-a9wfgh
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-a9wfgh sitelibdir\=./.gem.20251014-53563-a9wfgh install
+/opt/homebrew/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20251014-53563-a9wfgh/racc
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251014-53563-a9wfgh sitelibdir\=./.gem.20251014-53563-a9wfgh clean

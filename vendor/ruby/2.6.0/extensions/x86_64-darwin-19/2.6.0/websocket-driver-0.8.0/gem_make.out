@@ -1,0 +1,16 @@
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/2.6.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+/Users/jim/.rbenv/versions/2.6.3/bin/ruby -I /Users/jim/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20251014-47344-3xplz6.rb extconf.rb
+creating Makefile
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/2.6.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/2.6.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: -multiply_defined is obsolete
+
+current directory: /Users/jim/Projects/waka-app/vendor/ruby/2.6.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20251014-47344-189dumt
