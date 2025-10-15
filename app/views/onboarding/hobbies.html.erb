@@ -1,0 +1,31 @@
+<div class="max-w-2xl mx-auto">
+  <div class="text-center mb-12">
+    <h1 class="text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+      Let's plan your dream trip!
+    </h1>
+    <p class="text-xl text-gray-600">Step 1 of 3: Tell us about your interests</p>
+  </div>
+
+  <%= form_with url: onboarding_update_path(step: 'hobbies'), method: :patch, class: "space-y-8" do |f| %>
+    <div class="bg-white rounded-2xl shadow-xl p-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6">What do you love to do?</h2>
+      <p class="text-gray-600 mb-6">Select all that apply - the more we know, the better we can help!</p>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <% hobbies = ['Outdoor Adventures', 'Food & Dining', 'Art & Culture', 'Beach & Relaxation', 'Nightlife', 'Shopping', 'Photography', 'History', 'Wildlife'].each do |hobby| %>
+          <label class="flex items-center p-4 border-2 border-gray-200 rounded-xl cursor-pointer hover:border-purple-500 hover:bg-purple-50 transition-all">
+            <%= check_box_tag 'hobbies[]', hobby, @travel_profile.hobbies&.include?(hobby), class: "w-5 h-5 text-purple-600 rounded" %>
+            <span class="ml-3 text-gray-700"><%= hobby %></span>
+          </label>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center">
+      <div class="text-sm text-gray-500">
+        Progress: <span class="font-semibold text-purple-600">33%</span>
+      </div>
+      <%= f.submit "Next Step →", class: "bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all cursor-pointer" %>
+    </div>
+  <% end %>
+</div>

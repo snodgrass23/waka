@@ -1,0 +1,53 @@
+<div class="max-w-2xl mx-auto text-center">
+  <div class="mb-12">
+    <div class="text-8xl mb-6">🎉</div>
+    <h1 class="text-6xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-4">
+      You're all set!
+    </h1>
+    <p class="text-2xl text-gray-600">Welcome to your personalized travel planning experience</p>
+  </div>
+
+  <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Here's what we learned about you:</h2>
+
+    <div class="grid gap-6 text-left">
+      <% if @travel_profile.hobbies.present? %>
+        <div>
+          <h3 class="font-semibold text-gray-700 mb-2">Your Interests:</h3>
+          <div class="flex flex-wrap gap-2">
+            <% @travel_profile.hobbies.each do |hobby| %>
+              <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm"><%= hobby %></span>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+
+      <% if @travel_profile.travel_style.present? %>
+        <div>
+          <h3 class="font-semibold text-gray-700 mb-2">Travel Style:</h3>
+          <p class="text-gray-600"><%= @travel_profile.travel_style %></p>
+        </div>
+      <% end %>
+
+      <% if @travel_profile.budget_range.present? %>
+        <div>
+          <h3 class="font-semibold text-gray-700 mb-2">Budget:</h3>
+          <p class="text-gray-600"><%= @travel_profile.budget_range %></p>
+        </div>
+      <% end %>
+
+      <% if @travel_profile.destinations_interested.present? %>
+        <div>
+          <h3 class="font-semibold text-gray-700 mb-2">Dream Destinations:</h3>
+          <div class="flex flex-wrap gap-2">
+            <% @travel_profile.destinations_interested.each do |destination| %>
+              <span class="px-4 py-2 bg-orange-100 text-orange-700 rounded-full text-sm"><%= destination %></span>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <%= link_to "Start Planning Your Trip →", root_path, class: "inline-block bg-gradient-to-r from-green-600 to-blue-600 text-white px-12 py-5 rounded-full font-semibold text-xl hover:shadow-lg transform hover:scale-105 transition-all" %>
+</div>

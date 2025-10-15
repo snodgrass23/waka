@@ -1,0 +1,34 @@
+<div class="max-w-2xl mx-auto">
+  <div class="text-center mb-12">
+    <h1 class="text-5xl font-bold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent mb-4">
+      Dream Destinations
+    </h1>
+    <p class="text-xl text-gray-600">Step 3 of 3: Where do you want to go?</p>
+  </div>
+
+  <%= form_with url: onboarding_update_path(step: 'goals'), method: :patch, class: "space-y-8" do |f| %>
+    <div class="bg-white rounded-2xl shadow-xl p-8">
+      <h2 class="text-2xl font-bold text-gray-800 mb-6">Which destinations interest you?</h2>
+      <p class="text-gray-600 mb-6">Select all the places you'd love to explore!</p>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <% destinations = ['Europe', 'Asia', 'South America', 'Africa', 'North America', 'Australia/Oceania', 'Middle East', 'Caribbean', 'Antarctica'].each do |destination| %>
+          <label class="flex items-center p-4 border-2 border-gray-200 rounded-xl cursor-pointer hover:border-orange-500 hover:bg-orange-50 transition-all">
+            <%= check_box_tag 'destinations[]', destination, @travel_profile.destinations_interested&.include?(destination), class: "w-5 h-5 text-orange-600 rounded" %>
+            <span class="ml-3 text-gray-700"><%= destination %></span>
+          </label>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center">
+      <div class="text-sm text-gray-500">
+        Progress: <span class="font-semibold text-orange-600">100%</span>
+      </div>
+      <div class="flex gap-4">
+        <%= link_to "← Back", onboarding_path(step: 'travel_preferences'), class: "px-6 py-4 rounded-full font-semibold text-gray-600 hover:bg-gray-100 transition-all" %>
+        <%= f.submit "Complete Setup! ✓", class: "bg-gradient-to-r from-orange-600 to-red-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all cursor-pointer" %>
+      </div>
+    </div>
+  <% end %>
+</div>
