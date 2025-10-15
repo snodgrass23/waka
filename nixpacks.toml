@@ -2,7 +2,7 @@
 nixPkgs = ["...", "postgresql"]
 
 [phases.install]
-cmds = ["bundle install --deployment --without development test"]
+cmds = ["bundle install --deployment"]
 
 [start]
 cmd = "bundle exec rails db:migrate && bundle exec puma -C config/puma.rb"
