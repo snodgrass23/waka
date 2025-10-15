@@ -1,6 +1,10 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # Allow Railway domain
+  config.hosts << "waka-production.up.railway.app"
+  config.hosts << /.*\.railway\.app/
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
